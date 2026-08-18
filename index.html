@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Motors | Premium Motorbikes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">APEX<span>MOTORS</span></a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#bikes">Bikes</a>
+                <a href="#features">Why Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button id="cart-btn" class="icon-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>UNLEASH THE <span>RIDE</span></h1>
+            <p>Experience unmatched speed, precision, and power with our premium selection of super sports, cruisers, and adventure motorbikes.</p>
+            <div class="hero-btns">
+                <a href="#bikes" class="btn primary-btn">Explore Models</a>
+                <a href="#contact" class="btn secondary-btn">Book Test Ride</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Bikes Grid Section -->
+    <section id="bikes" class="products-section">
+        <h2 class="section-title">OUR <span>FEATURED FLEET</span></h2>
+        
+        <!-- Category Filters -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Bikes</button>
+            <button class="filter-btn" data-filter="sport">Sport</button>
+            <button class="filter-btn" data-filter="cruiser">Cruiser</button>
+            <button class="filter-btn" data-filter="adventure">Adventure</button>
+        </div>
+
+        <!-- Bike Cards Container -->
+        <div class="bike-grid" id="bike-grid">
+            <!-- Dynamic JavaScript Content Will Load Here -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="feature-card">
+            <i class="fas fa-shield-halved"></i>
+            <h3>3-Year Warranty</h3>
+            <p>Complete peace of mind with full manufacturer backing on every bike.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-truck-fast"></i>
+            <h3>Nationwide Delivery</h3>
+            <p>Safe, insured door-to-door transit for your new machine.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-wrench"></i>
+            <h3>Free 1st Service</h3>
+            <p>Complimentary 1,000 km checkup and fluid changes by certified techs.</p>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>YOUR RESERVATIONS</h2>
+                <button id="close-cart" class="close-btn">&times;</button>
+            </div>
+            <div class="cart-body" id="cart-items">
+                <!-- Cart items loaded dynamically -->
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">
+                    <span>Total:</span>
+                    <span id="cart-total-price">$0</span>
+                </div>
+                <button class="btn primary-btn checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Detail Modal -->
+    <div class="detail-modal" id="detail-modal">
+        <div class="detail-content" id="detail-content">
+            <!-- Detail modal dynamically loaded -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Apex Motors Inc. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
